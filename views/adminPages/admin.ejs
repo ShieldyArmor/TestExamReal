@@ -1,0 +1,51 @@
+<%- include('../partials/adminHeader'); -%>
+
+    <title>Database testing</title>
+
+<h1>Add those new shoes!</h1>
+<div id="addShoesForm">
+
+<div>
+<label>Name:</label>
+<input id="nameField"></input>
+</div>
+
+<div>
+<label>Brand:</label>
+<input id="brandField"></input>
+</div>
+
+<div>
+<label>Model:</label>
+<input id="modelField"></input>
+</div>
+
+<div>
+<label>Price:</label>
+<input id="priceField"></input>
+</div>
+
+<div>
+<label>Article Number:</label>
+<input id="articleField"></input>
+</div>
+
+<button onclick="addShoes()">Add new shoe</button>  
+<button onclick="updateShoes()">Update shoe</button>
+<p>**The update button uses the "Article Number" field to find which shoe to update.</p> 
+<br>    
+<br>    
+
+<h1>Remove those shoe!</h1>
+<div id="removeShoesField">
+    <label>Article Number:</label>
+    <input id="articleField"></input>
+</div>
+<button onclick="removeShoes()">Remove this shoe!</button>
+<br>    
+<br>    
+
+</div>
+
+<script src="js/admin.js" defer></script>
+<%- include('../partials/footer') -%>
